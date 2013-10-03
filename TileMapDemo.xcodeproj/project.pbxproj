@@ -280,6 +280,14 @@
 		E722D26C17DC19140061CE00 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E722D26B17DC19140061CE00 /* libwebsockets.a */; };
 		E722D27217DC19140061CE00 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E722D27117DC19140061CE00 /* AppDelegate.cpp */; };
 		E722D27517DC19140061CE00 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E722D27417DC19140061CE00 /* HelloWorldScene.cpp */; };
+		E7FD552517E16C55004CAFCB /* hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = E7FD551D17E16C55004CAFCB /* hit.caf */; };
+		E7FD552617E16C55004CAFCB /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E7FD551E17E16C55004CAFCB /* meta_tiles.png */; };
+		E7FD552717E16C55004CAFCB /* move.caf in Resources */ = {isa = PBXBuildFile; fileRef = E7FD551F17E16C55004CAFCB /* move.caf */; };
+		E7FD552817E16C55004CAFCB /* pickup.caf in Resources */ = {isa = PBXBuildFile; fileRef = E7FD552017E16C55004CAFCB /* pickup.caf */; };
+		E7FD552917E16C55004CAFCB /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = E7FD552117E16C55004CAFCB /* Player.png */; };
+		E7FD552A17E16C55004CAFCB /* TileMap.caf in Resources */ = {isa = PBXBuildFile; fileRef = E7FD552217E16C55004CAFCB /* TileMap.caf */; };
+		E7FD552B17E16C55004CAFCB /* TileMap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E7FD552317E16C55004CAFCB /* TileMap.tmx */; };
+		E7FD552C17E16C55004CAFCB /* tmw_desert_spacing.png in Resources */ = {isa = PBXBuildFile; fileRef = E7FD552417E16C55004CAFCB /* tmw_desert_spacing.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +881,14 @@
 		E722D27117DC19140061CE00 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		E722D27317DC19140061CE00 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		E722D27417DC19140061CE00 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		E7FD551D17E16C55004CAFCB /* hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.caf; sourceTree = "<group>"; };
+		E7FD551E17E16C55004CAFCB /* meta_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meta_tiles.png; sourceTree = "<group>"; };
+		E7FD551F17E16C55004CAFCB /* move.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = move.caf; sourceTree = "<group>"; };
+		E7FD552017E16C55004CAFCB /* pickup.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pickup.caf; sourceTree = "<group>"; };
+		E7FD552117E16C55004CAFCB /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		E7FD552217E16C55004CAFCB /* TileMap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TileMap.caf; sourceTree = "<group>"; };
+		E7FD552317E16C55004CAFCB /* TileMap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TileMap.tmx; sourceTree = "<group>"; };
+		E7FD552417E16C55004CAFCB /* tmw_desert_spacing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmw_desert_spacing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -944,6 +960,7 @@
 		E722CEDF17DC190A0061CE00 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7FD551C17E16C55004CAFCB /* TileGameResources */,
 				E722CEE017DC190A0061CE00 /* CloseNormal.png */,
 				E722CEE217DC190A0061CE00 /* CloseSelected.png */,
 				E722CEE417DC190A0061CE00 /* Default.png */,
@@ -2101,6 +2118,21 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		E7FD551C17E16C55004CAFCB /* TileGameResources */ = {
+			isa = PBXGroup;
+			children = (
+				E7FD551D17E16C55004CAFCB /* hit.caf */,
+				E7FD551E17E16C55004CAFCB /* meta_tiles.png */,
+				E7FD551F17E16C55004CAFCB /* move.caf */,
+				E7FD552017E16C55004CAFCB /* pickup.caf */,
+				E7FD552117E16C55004CAFCB /* Player.png */,
+				E7FD552217E16C55004CAFCB /* TileMap.caf */,
+				E7FD552317E16C55004CAFCB /* TileMap.tmx */,
+				E7FD552417E16C55004CAFCB /* tmw_desert_spacing.png */,
+			);
+			path = TileGameResources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2164,6 +2196,14 @@
 				E722CEF517DC190A0061CE00 /* iTunesArtwork in Resources */,
 				E722CF9417DC190C0061CE00 /* ChangeLog in Resources */,
 				E722D10817DC19100061CE00 /* project.pbxproj in Resources */,
+				E7FD552517E16C55004CAFCB /* hit.caf in Resources */,
+				E7FD552617E16C55004CAFCB /* meta_tiles.png in Resources */,
+				E7FD552717E16C55004CAFCB /* move.caf in Resources */,
+				E7FD552817E16C55004CAFCB /* pickup.caf in Resources */,
+				E7FD552917E16C55004CAFCB /* Player.png in Resources */,
+				E7FD552A17E16C55004CAFCB /* TileMap.caf in Resources */,
+				E7FD552B17E16C55004CAFCB /* TileMap.tmx in Resources */,
+				E7FD552C17E16C55004CAFCB /* tmw_desert_spacing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2564,6 +2604,7 @@
 				E722D27A17DC19140061CE00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,31 +2,10 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-using namespace cocos2d;
 
 class HelloWorld : public cocos2d::CCLayer
 {
-    
-private:
-    CCSprite *_player;
-    CCTMXTiledMap *_tileMap;
-    CCTMXLayer *_background;
-    CCTMXLayer *_meta;
-    CCTMXLayer *_foreground;
-    
 public:
-    
-    void registerWithTouchDispatcher();
-    
-    void setPlayerPosition(CCPoint position);
-    
-    bool ccTouchBegan(CCTouch *touch, CCEvent *event);
-    
-    void ccTouchEnded(CCTouch *touch, CCEvent *event);
-    
-    void setViewPointCenter(CCPoint position);
-    
-    CCPoint tileCoordForPosition(CCPoint position);
     // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)
     virtual bool init();
 
